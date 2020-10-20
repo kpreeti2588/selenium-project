@@ -1,0 +1,15 @@
+com\project\pages\HomePage.class
+com\project\testcases\SearchItemTestCase.class
+com\project\utils\PropertyReader.class
+com\project\pages\SocialPages.class
+com\project\testcases\AccountCreateTestCase.class
+com\project\testcases\LoginTestCase.class
+com\project\testcases\Init.class
+com\project\pages\ReviewPage.class
+com\project\testcases\ManufacturerTestCase.class
+com\project\pages\CreateAccount.class
+com\project\utils\ExcelReader.class
+com\project\testcases\OrderPlaceTestCase.class
+com\project\testcases\ShareTestCase.class
+com\project\pages\SignIn.class
+com\project\testcases\ReviewTestCase.class

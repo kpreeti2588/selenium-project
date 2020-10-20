@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">ChromeTests</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">171,251</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ChromeTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.project.testcases.AccountCreateTestCase</td><td><a href="#m0">SuccessCreateAccount</a></td><td rowspan="2">1602017732423</td><td rowspan="2">2345</td></tr><tr class="failedeven"><td><a href="#m1">SuccessCreateAccount</a></td></tr><tr><th colspan="4">ChromeTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.project.testcases.AccountCreateTestCase</td><td><a href="#m2">ErrorCreateAccount_Country</a></td><td rowspan="2">1602017609368</td><td rowspan="2">10538</td></tr><tr class="passedeven"><td><a href="#m3">ErrorCreateAccount_Country</a></td></tr></tbody>
+</table>
+<h2>ChromeTests</h2><h3 id="m0">com.project.testcases.AccountCreateTestCase#SuccessCreateAccount</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Day=12, Password=priya123, Zip=96443, Month=3, Country=United States, Title=Mrs., AddInfo=, HomePhone=, MobilePhone=546553, State=Oregon, NewsletterSignup=N, LastName=sharma, FirstName=priya, Year=1995, Company=ITC, Address2=sector 21, Address1=m3m, Alias=office, Email=preeti1@mailinator.com, City=gurgaon, SpecialOffer=Y}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#customer_firstname&quot;}
+  (Session info: chrome=85.0.4183.121)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;II02-F3LXQF2&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\PREETI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52566}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 6627635ddcdface14901c50d76dd8fbb
+*** Element info: {Using=id, value=customer_firstname}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.clear(Unknown Source)
+	at com.project.pages.CreateAccount.enterFirstName(CreateAccount.java:116)
+	at com.project.pages.CreateAccount.enterPersonalInfo(CreateAccount.java:219)
+	at com.project.testcases.AccountCreateTestCase.SuccessCreateAccount(AccountCreateTestCase.java:38)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.project.testcases.AccountCreateTestCase#SuccessCreateAccount</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Day=6, Password=abhi123, Zip=45678, Month=6, Country=United States, Title=Mr., AddInfo=, HomePhone=999343, MobilePhone=, State=California, NewsletterSignup=Y, LastName=gupta, FirstName=abhishek, Year=1990, Company=infosys, Address2=sector 23, Address1=dlf, Alias=home, Email=abhi3@mailinator.com, City=kanpur, SpecialOffer=N}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#customer_firstname&quot;}
+  (Session info: chrome=85.0.4183.121)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;II02-F3LXQF2&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\PREETI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52520}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0fe484eb98ca43cae6b968aec805da66
+*** Element info: {Using=id, value=customer_firstname}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.clear(Unknown Source)
+	at com.project.pages.CreateAccount.enterFirstName(CreateAccount.java:116)
+	at com.project.pages.CreateAccount.enterPersonalInfo(CreateAccount.java:219)
+	at com.project.testcases.AccountCreateTestCase.SuccessCreateAccount(AccountCreateTestCase.java:38)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.project.testcases.AccountCreateTestCase#ErrorCreateAccount_Country</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Day=6, Password=praya123, Zip=45678, Month=6, Country=, Title=Mrs., AddInfo=, HomePhone=454543, MobilePhone=, State=California, NewsletterSignup=Y, LastName=gupta, FirstName=pragya, Year=1990, Company=infosys, Address2=sector 23, Address1=dlf, Alias=home, Email=pragya2@mailinator.com, City=kanpur, SpecialOffer=N}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.project.testcases.AccountCreateTestCase#ErrorCreateAccount_Country</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Day=6, Password=manav123, Zip=45, Month=6, Country=United States, Title=Mr., AddInfo=Add it as home address, HomePhone=454543, MobilePhone=, State=California, NewsletterSignup=Y, LastName=sharma, FirstName=manav, Year=1990, Company=infosys, Address2=sector 23, Address1=dlf, Alias=home, Email=manav@mailinator.com, City=kanpur, SpecialOffer=N}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
